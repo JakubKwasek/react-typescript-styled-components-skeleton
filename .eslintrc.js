@@ -22,7 +22,7 @@ module.exports = {
 		"@typescript-eslint/semi": ["error"],
 		"quotes": ["error", "double"],
 		"jsx-quotes": ["error", "prefer-double"],
-		"indent": ["error", 2],
+		"indent": ["error", "tab"],
 		"eqeqeq": "error",
 		"no-multi-str": "error",
 		"arrow-spacing": ["error", { "before": true, "after": true }]

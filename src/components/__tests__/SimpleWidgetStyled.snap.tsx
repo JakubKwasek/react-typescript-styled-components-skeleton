@@ -4,10 +4,10 @@ import { SimpleWidgetStyled } from "../styled";
 import "jest-styled-components";
 
 describe("SimpleWidgetStyled", () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<SimpleWidgetStyled />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+	it("renders correctly", () => {
+		const tree = renderer
+			.create(<SimpleWidgetStyled />)
+			.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 });
