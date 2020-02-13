@@ -1,5 +1,5 @@
 {
-  "name": "react-app-ts-skeleton",
+  "name": "react-typescript-styled-components-skeleton",
   "version": "1.0.0",
   "main": "dist/bundle.js",
   "author": "Jakub Kwasek",
@@ -28,6 +28,7 @@
     "@typescript-eslint/parser": "2.19.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.18.3",
+    "html-webpack-plugin": "3.2.0",
     "jest": "25.1.0",
     "jest-styled-components": "7.0.0",
     "react-test-renderer": "16.12.0",

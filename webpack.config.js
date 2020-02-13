@@ -1,5 +1,6 @@
 const path = require("path");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	mode: "production",
@@ -8,7 +9,7 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, "dist"),
-		filename: "bundle.js"
+		filename: "[name].bundle.js"
 	},
 	module: {
 		rules: [
@@ -26,15 +27,19 @@ module.exports = {
 	},
 	devtool: "cheap-module-eval-source-map",
 	devServer: {
-		contentBase: path.join(__dirname, "dist"),
-		compress: true,
+		contentBase: [path.join(__dirname, "dist")],
 		hot: true
 	},
-	externals: {
-		"react": "React",
-		"react-dom": "ReactDOM",
-	},
+	externals: {},
 	optimization: {
 		minimizer: [new UglifyJsPlugin()],
-	}
+		splitChunks: {
+			automaticNameDelimiter: ".",
+			chunks: "all",
+		},
+	},
+	plugins: [new HtmlWebpackPlugin({
+		title: "react-typescript-styled-components-skeleton",
+		template: path.join(__dirname, "templates/index.ejs"),
+	})]
 };

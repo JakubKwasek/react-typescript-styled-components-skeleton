@@ -1,6 +1,7 @@
 export const MainTheme = {
+	name: "MainTheme",
 	colors: {
-		primary: "#ddd",
+		primary: "grey",
 		secondary: "red",
 	}
 };
