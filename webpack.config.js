@@ -32,7 +32,7 @@ module.exports = {
 	devtool: "cheap-module-eval-source-map",
 	devServer: {
 		contentBase: path.join(__dirname, "dist"),
-		hot: true,
+		historyApiFallback: true,
 	},
 	optimization: {
 		minimizer: [new UglifyJsPlugin()],
