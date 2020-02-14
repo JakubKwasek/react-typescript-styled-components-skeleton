@@ -3,5 +3,5 @@ export const MainTheme = {
 	colors: {
 		primary: "grey",
 		secondary: "red",
-	}
+	},
 };

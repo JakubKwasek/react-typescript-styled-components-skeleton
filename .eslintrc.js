@@ -21,6 +21,12 @@ module.exports = {
 		"@typescript-eslint/no-var-requires": "off",
 		"@typescript-eslint/semi": ["error"],
 		"quotes": ["error", "double"],
+		"comma-dangle": ["error",
+			{
+			"arrays": "never",
+			"objects": "always",
+			}
+		],
 		"jsx-quotes": ["error", "prefer-double"],
 		"indent": ["error", "tab"],
 		"eqeqeq": "error",

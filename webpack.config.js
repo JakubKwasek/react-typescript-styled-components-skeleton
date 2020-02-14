@@ -5,32 +5,35 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	mode: "production",
 	resolve: {
-		extensions: [".ts", ".tsx", ".js"]
+		extensions: [".ts", ".tsx", ".js"],
 	},
 	output: {
 		path: path.join(__dirname, "dist"),
-		filename: "[name].bundle.js"
+		filename: "[name].bundle.js",
 	},
 	module: {
 		rules: [
 			{
 				test: /\.ts(x?)$/,
 				exclude: /node_modules/,
-				use: [{loader: "ts-loader"}]
+				use: [
+					{
+						loader: "ts-loader",
+					}
+				],
 			},
 			{
 				test: /\.js$/,
 				enforce: "pre",
-				loader: "source-map-loader"
+				loader: "source-map-loader",
 			}
-		]
+		],
 	},
 	devtool: "cheap-module-eval-source-map",
 	devServer: {
-		contentBase: [path.join(__dirname, "dist")],
-		hot: true
+		contentBase: path.join(__dirname, "dist"),
+		hot: true,
 	},
-	externals: {},
 	optimization: {
 		minimizer: [new UglifyJsPlugin()],
 		splitChunks: {
@@ -38,8 +41,10 @@ module.exports = {
 			chunks: "all",
 		},
 	},
-	plugins: [new HtmlWebpackPlugin({
-		title: "react-typescript-styled-components-skeleton",
-		template: path.join(__dirname, "templates/index.ejs"),
-	})]
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: "react-typescript-styled-components-skeleton",
+			template: path.join(__dirname, "templates/index.ejs"),
+		})
+	],
 };
