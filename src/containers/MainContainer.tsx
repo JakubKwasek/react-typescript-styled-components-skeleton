@@ -1,4 +1,7 @@
 import * as React from "react";
-import { SimpleWidget } from "../components/SimpleWidget";
 
-export const MainContainer = (): JSX.Element => <SimpleWidget name={"User"} />;
+export const MainContainer = (): JSX.Element => (
+	<div>
+		<h2>Welcome to the store</h2>
+	</div>
+);
