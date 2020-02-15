@@ -15,7 +15,6 @@ export const AppRouter = (): JSX.Element => (
 				<Route path="/" component={ MainContainer } exact={ true } />
 				<Route path="/store" component={ StoreContainer } />
 				<Route path="/cart" component={ CartContainer } exact={ true } />
-				<Route path="/cart/:id" component={ CartContainer } />
 				<Route component={ NotFoundContainer } />
 			</Switch>
 		</Container>

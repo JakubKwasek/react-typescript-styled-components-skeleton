@@ -1,14 +1,18 @@
 import * as React from "react";
-import { NavLink } from "react-router-dom";
-import { HeaderStyled, HeaderItemStyled } from "./styled";
+import {
+	HeaderStyled,
+	HeaderItemStyled,
+	NavLinkStyled,
+	HeaderItemLinksStyled
+} from "./styled";
 
 export const Header = (): JSX.Element => (
 	<HeaderStyled>
-		<HeaderItemStyled>Cart application</HeaderItemStyled>
-		<HeaderItemStyled>
-			<NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink>
-			<NavLink to="/cart" activeClassName="is-active">Cart</NavLink>
-			<NavLink to="/store" activeClassName="is-active">Store</NavLink>
-		</HeaderItemStyled>
+		<HeaderItemStyled>Movie Store</HeaderItemStyled>
+		<HeaderItemLinksStyled>
+			<NavLinkStyled to="/" activeClassName="is-active" exact={true}>Dashboard</NavLinkStyled>
+			<NavLinkStyled to="/store" activeClassName="is-active">Store</NavLinkStyled>
+			<NavLinkStyled to="/cart" activeClassName="is-active">Cart</NavLinkStyled>
+		</HeaderItemLinksStyled>
 	</HeaderStyled>
 );

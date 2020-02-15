@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const HeaderStyled = styled.div(
 	(props) => `
@@ -8,7 +9,7 @@ export const HeaderStyled = styled.div(
 		justify-content: left;
 		border-bottom: 1px solid #ccc;
 		background: #ddd;
-		padding: 12px;
+		padding: 0px;
 `);
 
 export const SiteNameStyled = styled.div(
@@ -24,4 +25,22 @@ export const SiteNameStyled = styled.div(
 export const HeaderItemStyled = styled.div(
 	(props) => `
 		flex-grow: 1;
+		line-height: 50px;
 `);
+
+export const HeaderItemLinksStyled = styled(HeaderItemStyled)`
+	text-align: right;
+`;
+
+export const NavLinkStyled = styled(NavLink)`
+	padding: 6px 12px;
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #333;
+	&.is-active {
+		background: #999;
+		color: #fff;
+		border-radius: 3px;
+	}
+`;
