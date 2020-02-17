@@ -17,8 +17,7 @@ export const BookSectionStyled = styled.div(
 `);
 
 export const BookSectionItemStyled = styled.div(
-	(props: {col?: number}) => `
-		flex-grow: ${props.col};
+	(props) => `
 		flex-basis: 20%;
 		border-right: 1px solid #ddd;
 		padding: 0px 5px;
@@ -29,22 +28,6 @@ export const BookImageStyled = styled(BookSectionItemStyled)`
 	img {
 		border-radius: 3px;
 	}
-`;
-
-export const BookTitleStyled = styled(BookSectionItemStyled)`
-
-`;
-
-export const BookAuthorStyled = styled(BookSectionItemStyled)`
-
-`;
-
-export const BookPriceStyled = styled(BookSectionItemStyled)`
-
-`;
-
-export const BookDescriptionStyled = styled(BookSectionItemStyled)`
-
 `;
 
 export const BookActionStyled = styled(BookSectionItemStyled)`

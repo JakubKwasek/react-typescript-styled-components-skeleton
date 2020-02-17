@@ -3,23 +3,41 @@ import { books } from "../data/books";
 import {
 	BookSectionStyled,
 	BookImageStyled,
-	BookTitleStyled,
-	BookAuthorStyled,
-	BookPriceStyled,
+	BookSectionItemStyled,
 	BookActionStyled
 } from "../components/BookSection/styled";
 import { ButtonPrimary } from "../components/Buttons/styled";
+
+export const AddToCart = (id: number): void => {
+	console.log(id);
+};
 
 export const StoreContainer = (): JSX.Element => (
 	<>
 		{
 			books.map((book) => (
 				<BookSectionStyled key={book.id}>
-					<BookImageStyled col={1}><img src={book.image}/></BookImageStyled>
-					<BookTitleStyled col={1}><small>Title:</small><p>{book.title}</p></BookTitleStyled>
-					<BookAuthorStyled col={1}><small>Author:</small><p>{book.author}</p></BookAuthorStyled>
-					<BookPriceStyled col={1}><small>Price:</small><p>{book.price}</p></BookPriceStyled>
-					<BookActionStyled col={1}><ButtonPrimary>Add to Cart</ButtonPrimary></BookActionStyled>
+					<BookImageStyled>
+						<img src={book.image} />
+					</BookImageStyled>
+					<BookSectionItemStyled>
+						<small>Title:</small>
+						<p>{book.title}</p>
+					</BookSectionItemStyled>
+					<BookSectionItemStyled>
+						<small>Author:</small>
+						<p>{book.author}</p>
+					</BookSectionItemStyled>
+					<BookSectionItemStyled>
+						<small>Price:</small>
+						<p>{book.price}</p>
+					</BookSectionItemStyled>
+					<BookActionStyled>
+						<ButtonPrimary
+							onClick={(e): void => AddToCart(book.id)}>
+								Add to Cart
+						</ButtonPrimary>
+					</BookActionStyled>
 				</BookSectionStyled>
 			))
 		}
