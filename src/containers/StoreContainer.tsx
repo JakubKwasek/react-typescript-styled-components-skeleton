@@ -34,7 +34,7 @@ export const StoreContainer = (): JSX.Element => (
 					</BookSectionItemStyled>
 					<BookActionStyled>
 						<ButtonPrimary
-							onClick={(e): void => AddToCart(book.id)}>
+							onClick={(): void => AddToCart(book.id)}>
 								Add to Cart
 						</ButtonPrimary>
 					</BookActionStyled>

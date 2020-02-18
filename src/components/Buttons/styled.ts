@@ -20,18 +20,19 @@ export const ButtonPrimary = styled.div(
 		&:active{
 			border-bottom: 3px solid transparent;
 		}
-`);
+	`);
 
-export const ChangeValue = styled.div`
-	display: inline-block;
-	border: 1px solid #ddd;
-	border-radius: 50px;
-	font-weight: bold;
-	width: 16px;
-	height: 16px;
-	line-height: 16px;
-	background: #fff;
-	padding: 5px;
-	text-align: center;
-	cursor: pointer;
-`;
+export const BadgeButton = styled.div(
+	(props) => `
+		display: inline-block;
+		border: 1px solid #ddd;
+		border-radius: 50px;
+		font-weight: bold;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		background: #fff;
+		padding: 5px;
+		text-align: center;
+		cursor: pointer;
+	`);

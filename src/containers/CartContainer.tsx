@@ -7,14 +7,19 @@ import {
 } from "../components/BookSection/styled";
 import {
 	ButtonPrimary,
-	ChangeValue } from "../components/Buttons/styled";
+	BadgeButton } from "../components/Buttons/styled";
 import { booksCart } from "../data/booksCart";
+
+enum QuantityOperation {
+	"add",
+	"remove"
+}
 
 export const RemoveFromCart = (id: number): void => {
 	console.log(id);
 };
 
-export const ChangeQuantity = (id: number, operation: string): void => {
+export const ChangeQuantity = (id: number, operation: QuantityOperation): void => {
 	console.log(id);
 };
 
@@ -37,16 +42,23 @@ export const CartContainer = (): JSX.Element => (
 					<BookSectionItemStyled>
 						<small>Quantity:</small>
 						<p>
-							<ChangeValue
-								onClick={(): void => ChangeQuantity(book.id, "remove")}>-</ChangeValue>
+							<BadgeButton
+								onClick={(): void =>
+									ChangeQuantity(book.id, QuantityOperation.remove)}>
+								-
+							</BadgeButton>
 							{book.quantity}
-							<ChangeValue
-								onClick={(): void => ChangeQuantity(book.id, "add")}>+</ChangeValue>
+							<BadgeButton
+								onClick={(): void =>
+									ChangeQuantity(book.id, QuantityOperation.add)}>
+								+
+							</BadgeButton>
 						</p>
 					</BookSectionItemStyled>
 					<BookActionStyled>
 						<ButtonPrimary
-							onClick={(e): void => RemoveFromCart(book.id)}>
+							onClick={(e): void =>
+								RemoveFromCart(book.id)}>
 							Remove
 						</ButtonPrimary>
 					</BookActionStyled>

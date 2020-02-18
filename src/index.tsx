@@ -17,4 +17,4 @@ const init = (): void => {
 	);
 };
 
-window.addEventListener("DOMContentLoaded", () => init());
+window.addEventListener("DOMContentLoaded", init);

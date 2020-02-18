@@ -14,23 +14,25 @@ export const BookSectionStyled = styled.div(
 			box-shadow: #bbb 0px 0px 5px;
 			background: #ddd;
 		}
-`);
+	`);
 
 export const BookSectionItemStyled = styled.div(
 	(props) => `
 		flex-basis: 20%;
 		border-right: 1px solid #ddd;
 		padding: 0px 5px;
-`);
+	`);
 
-export const BookImageStyled = styled(BookSectionItemStyled)`
-	flex-basis: 30px;
-	img {
-		border-radius: 3px;
-	}
-`;
+export const BookImageStyled = styled(BookSectionItemStyled)(
+	(props) => `
+		flex-basis: 30px;
+		img {
+			border-radius: 3px;
+		}
+	`);
 
-export const BookActionStyled = styled(BookSectionItemStyled)`
-	border-right: 0;
-	text-align: center;
-`;
+export const BookActionStyled = styled(BookSectionItemStyled)(
+	(props) => `
+		border-right: 0;
+		text-align: center;
+	`);

@@ -10,7 +10,7 @@ export const HeaderStyled = styled.div(
 		border-bottom: 1px solid #ccc;
 		background: #ddd;
 		padding: 0px;
-`);
+	`);
 
 export const SiteNameStyled = styled.div(
 	(props) => `
@@ -20,27 +20,30 @@ export const SiteNameStyled = styled.div(
 		border-bottom: 1px solid #ccc;
 		background: #ddd;
 		padding: 12px;
-`);
+	`);
 
 export const HeaderItemStyled = styled.div(
 	(props) => `
 		flex-grow: 1;
 		line-height: 50px;
-`);
+	`);
 
-export const HeaderItemLinksStyled = styled(HeaderItemStyled)`
-	text-align: right;
-`;
+export const HeaderItemLinksStyled = styled(HeaderItemStyled)(
+	(props) => `
+		text-align: right;
+	`);
 
-export const NavLinkStyled = styled(NavLink)`
-	padding: 6px 12px;
-	line-height: 50px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #333;
-	&.is-active {
-		background: #999;
-		color: #fff;
-		border-radius: 3px;
-	}
-`;
+
+export const NavLinkStyled = styled(NavLink)(
+	(props) => `
+		padding: 6px 12px;
+		line-height: 50px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #333;
+		&.is-active {
+			background: #999;
+			color: #fff;
+			border-radius: 3px;
+		}
+	`);
