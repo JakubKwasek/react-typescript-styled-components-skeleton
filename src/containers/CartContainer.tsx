@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box, Button, BoxProps } from "grommet";
 import { booksCart } from "../data/booksCart";
+import { BoxFactory } from "../components/BoxFactory";
 
 enum QuantityOperation {
 	"add",
@@ -14,18 +15,6 @@ export const RemoveFromCart = (id: number): void => {
 export const ChangeQuantity = (id: number, operation: QuantityOperation): void => {
 	console.log(id);
 };
-
-export const BoxFactory = (props: BoxProps & {children: JSX.Element}): JSX.Element => (
-	<Box
-		height={{ min: "160px", }}
-		pad="small"
-		align={"start"}
-		direction={"column"}
-		gap="medium"
-		{...props}>
-		{props.children}
-	</Box>
-);
 
 export const CartContainer = (): JSX.Element => (
 	<>

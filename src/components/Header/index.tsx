@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { Box, Header } from "grommet";
 
 export const HeaderMain = (): JSX.Element => (
-
 	<Header background="light-4" pad="small">
 		Movie Shop
 		<Box direction="row" gap="medium">
