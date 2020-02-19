@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Button, BoxProps } from "grommet";
+import { Box, Button } from "grommet";
 import { booksCart } from "../data/booksCart";
 import { BoxFactory } from "../components/BoxFactory";
 
@@ -20,7 +20,12 @@ export const CartContainer = (): JSX.Element => (
 	<>
 		{
 			booksCart.map((book) => (
-				<Box align="start" direction={"row"} border={{side: "bottom",}} pad="small" key={book.id}>
+				<Box
+					align="start"
+					direction={"row"}
+					border={{side: "bottom",}}
+					pad="small"
+					key={book.id}>
 					<BoxFactory
 						width={{ min: "10%", }}>
 						<img src={book.image} />

@@ -2,13 +2,15 @@
 
 exports[`MainContainer renders correctly 1`] = `
 <div
-  className="sc-AxjAm kVvkxP"
+  className="StyledBox-sc-13pk1d4-0 bFasyF"
 >
+  <h1
+    className="StyledHeading-sc-1rdh4aw-0 jbcBHz"
+  >
+    Welcome!
+  </h1>
   <h2>
-    Hello there:
+    Store is ready
   </h2>
-  <h3>
-    User
-  </h3>
 </div>
 `;

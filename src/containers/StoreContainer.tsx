@@ -11,7 +11,12 @@ export const StoreContainer = (): JSX.Element => (
 	<>
 		{
 			books.map((book) => (
-				<Box align="start" direction={"row"} border={{side: "bottom",}} pad="small" key={book.id}>
+				<Box
+					align="start"
+					direction={"row"}
+					border={{side: "bottom",}}
+					pad="small"
+					key={book.id}>
 					<BoxFactory
 						width={{ min: "10%", }}>
 						<img src={book.image} />

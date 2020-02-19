@@ -1,0 +1,504 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartContainer renders correctly 1`] = `
+Array [
+  <div
+    className="StyledBox-sc-13pk1d4-0 bZxUit"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 hPokmc"
+    >
+      <img
+        src="http://dummyimage.com/50x70.png/ff4444/ffffff"
+      />
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 WHhky"
+    >
+      <small>
+        Title:
+      </small>
+      <p>
+        One False Move
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Price:
+      </small>
+      <p>
+        $7.67
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Quantity:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        2
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Action:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fErzFK"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </p>
+    </div>
+  </div>,
+  <div
+    className="StyledBox-sc-13pk1d4-0 bZxUit"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 hPokmc"
+    >
+      <img
+        src="http://dummyimage.com/50x70.png/ff4444/ffffff"
+      />
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 WHhky"
+    >
+      <small>
+        Title:
+      </small>
+      <p>
+        Creation of the Humanoids, The
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Price:
+      </small>
+      <p>
+        $9.48
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Quantity:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        1
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Action:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fErzFK"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </p>
+    </div>
+  </div>,
+  <div
+    className="StyledBox-sc-13pk1d4-0 bZxUit"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 hPokmc"
+    >
+      <img
+        src="http://dummyimage.com/50x70.png/5fa2dd/ffffff"
+      />
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 WHhky"
+    >
+      <small>
+        Title:
+      </small>
+      <p>
+        Judith of Bethulia
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Price:
+      </small>
+      <p>
+        $6.85
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Quantity:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        1
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Action:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fErzFK"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </p>
+    </div>
+  </div>,
+  <div
+    className="StyledBox-sc-13pk1d4-0 bZxUit"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 hPokmc"
+    >
+      <img
+        src="http://dummyimage.com/50x70.png/dddddd/000000"
+      />
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 WHhky"
+    >
+      <small>
+        Title:
+      </small>
+      <p>
+        23 (23 - Nichts ist so wie es scheint)
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Price:
+      </small>
+      <p>
+        $1.16
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Quantity:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        2
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Action:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fErzFK"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </p>
+    </div>
+  </div>,
+  <div
+    className="StyledBox-sc-13pk1d4-0 bZxUit"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 hPokmc"
+    >
+      <img
+        src="http://dummyimage.com/50x70.png/dddddd/000000"
+      />
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 WHhky"
+    >
+      <small>
+        Title:
+      </small>
+      <p>
+        Mrs. Soffel
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Price:
+      </small>
+      <p>
+        $5.48
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Quantity:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        2
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Action:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fErzFK"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </p>
+    </div>
+  </div>,
+  <div
+    className="StyledBox-sc-13pk1d4-0 bZxUit"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 hPokmc"
+    >
+      <img
+        src="http://dummyimage.com/50x70.png/ff4444/ffffff"
+      />
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 WHhky"
+    >
+      <small>
+        Title:
+      </small>
+      <p>
+        The Hound of the Baskervilles
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Price:
+      </small>
+      <p>
+        $8.87
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Quantity:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        1
+        <button
+          className="StyledButton-sc-323bzc-0 fYqBJk"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </p>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 bbVmir"
+    >
+      <small>
+        Action:
+      </small>
+      <p>
+        <button
+          className="StyledButton-sc-323bzc-0 fErzFK"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </p>
+    </div>
+  </div>,
+]
+`;

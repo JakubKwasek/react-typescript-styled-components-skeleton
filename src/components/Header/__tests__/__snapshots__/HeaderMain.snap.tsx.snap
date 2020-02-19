@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderMain renders correctly 1`] = `
+<header
+  className="StyledBox-sc-13pk1d4-0 jgHovw"
+>
+  Movie Shop
+  <div
+    className="StyledBox__StyledBoxGap-sc-13pk1d4-1 bmrRmF"
+  />
+  <div
+    className="StyledBox-sc-13pk1d4-0 eitMOG"
+  >
+    <a
+      aria-current="page"
+      className="is-active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Dashboard
+    </a>
+    <div
+      className="StyledBox__StyledBoxGap-sc-13pk1d4-1 bmrRmF"
+    />
+    <a
+      aria-current={null}
+      href="/store"
+      onClick={[Function]}
+    >
+      Store
+    </a>
+    <div
+      className="StyledBox__StyledBoxGap-sc-13pk1d4-1 bmrRmF"
+    />
+    <a
+      aria-current={null}
+      href="/cart"
+      onClick={[Function]}
+    >
+      Cart
+    </a>
+  </div>
+</header>
+`;
