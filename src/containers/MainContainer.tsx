@@ -1,10 +1,14 @@
 import * as React from "react";
-import { Card, CardBlock, CardTitle } from "@bootstrap-styled/v4";
+import { Box, Heading } from "grommet";
 
 export const MainContainer = (): JSX.Element => (
-	<Card>
-		<CardBlock>
-			<CardTitle>Welcome to the store</CardTitle>
-		</CardBlock>
-	</Card>
+	<Box
+		justify="center"
+		align="center"
+		pad="medium"
+		background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
+	>
+		<Heading color="accent">Welcome!</Heading>
+		<h2>Store is ready</h2>
+	</Box>
 );

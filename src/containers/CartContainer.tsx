@@ -1,13 +1,5 @@
 import * as React from "react";
-import {
-	BookSectionStyled,
-	BookSectionItemStyled,
-	BookActionStyled,
-	BookImageStyled
-} from "../components/BookSection/styled";
-import {
-	ButtonPrimary,
-	BadgeButton } from "../components/Buttons/styled";
+import { Box, Button, BoxProps } from "grommet";
 import { booksCart } from "../data/booksCart";
 
 enum QuantityOperation {
@@ -23,46 +15,76 @@ export const ChangeQuantity = (id: number, operation: QuantityOperation): void =
 	console.log(id);
 };
 
+export const BoxFactory = (props: BoxProps & {children: JSX.Element}): JSX.Element => (
+	<Box
+		height={{ min: "160px", }}
+		pad="small"
+		align={"start"}
+		direction={"column"}
+		gap="medium"
+		{...props}>
+		{props.children}
+	</Box>
+);
+
 export const CartContainer = (): JSX.Element => (
 	<>
 		{
 			booksCart.map((book) => (
-				<BookSectionStyled key={book.id}>
-					<BookImageStyled>
+				<Box align="start" direction={"row"} border={{side: "bottom",}} pad="small" key={book.id}>
+					<BoxFactory
+						width={{ min: "10%", }}>
 						<img src={book.image} />
-					</BookImageStyled>
-					<BookSectionItemStyled>
-						<small>Title:</small>
-						<p>{book.title}</p>
-					</BookSectionItemStyled>
-					<BookSectionItemStyled>
-						<small>Price:</small>
-						<p>{book.price}</p>
-					</BookSectionItemStyled>
-					<BookSectionItemStyled>
-						<small>Quantity:</small>
-						<p>
-							<BadgeButton
-								onClick={(): void =>
-									ChangeQuantity(book.id, QuantityOperation.remove)}>
-								-
-							</BadgeButton>
-							{book.quantity}
-							<BadgeButton
-								onClick={(): void =>
-									ChangeQuantity(book.id, QuantityOperation.add)}>
-								+
-							</BadgeButton>
-						</p>
-					</BookSectionItemStyled>
-					<BookActionStyled>
-						<ButtonPrimary
-							onClick={(e): void =>
-								RemoveFromCart(book.id)}>
-							Remove
-						</ButtonPrimary>
-					</BookActionStyled>
-				</BookSectionStyled>
+					</BoxFactory>
+					<BoxFactory
+						width={{ min: "30%", }}>
+						<>
+							<small>Title:</small>
+							<p>{book.title}</p>
+						</>
+					</BoxFactory>
+					<BoxFactory
+						width={{ min: "20%", }}>
+						<>
+							<small>Price:</small>
+							<p>{book.price}</p>
+						</>
+					</BoxFactory>
+					<BoxFactory
+						width={{ min: "20%", }}>
+						<>
+							<small>Quantity:</small>
+							<p>
+								<Button
+									margin={{ horizontal: "10px",}}
+									label="-"
+									reverse
+									onClick={(): void =>
+										ChangeQuantity(book.id, QuantityOperation.remove)}/>
+								{book.quantity}
+								<Button
+									margin={{ horizontal: "10px",}}
+									label="+"
+									reverse
+									onClick={(): void =>
+										ChangeQuantity(book.id, QuantityOperation.add)}/>
+							</p>
+						</>
+					</BoxFactory>
+					<BoxFactory
+						width={{ min: "20%", }}>
+						<>
+							<small>Action:</small>
+							<p>
+								<Button
+									label="Remove"
+									primary
+									onClick={(e): void =>
+										RemoveFromCart(book.id)} />
+							</p>
+						</>
+					</BoxFactory>
+				</Box>
 			))
 		}
 	</>

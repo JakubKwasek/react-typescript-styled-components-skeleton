@@ -5,19 +5,23 @@ import { StoreContainer } from "../containers/StoreContainer";
 import { CartContainer } from "../containers/CartContainer";
 import { NotFoundContainer } from "../containers/NotFoundContainer";
 import { HeaderMain } from "../components/Header/";
-// import { Container } from "../components/Container/styled";
-import { Container } from "@bootstrap-styled/v4";
+import { Grid } from "grommet";
 
 export const AppRouter = (): JSX.Element => (
 	<BrowserRouter>
 		<HeaderMain />
-		<Container>
+		<Grid
+			fill
+			columns={["flex"]}
+			rows={["flex"]}
+			gap="small"
+		>
 			<Switch>
 				<Route path="/" component={ MainContainer } exact={ true } />
 				<Route path="/store" component={ StoreContainer } />
 				<Route path="/cart" component={ CartContainer } exact={ true } />
 				<Route component={ NotFoundContainer } />
 			</Switch>
-		</Container>
+		</Grid>
 	</BrowserRouter>
 );
