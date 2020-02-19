@@ -4,12 +4,13 @@ import { MainContainer } from "../containers/MainContainer";
 import { StoreContainer } from "../containers/StoreContainer";
 import { CartContainer } from "../containers/CartContainer";
 import { NotFoundContainer } from "../containers/NotFoundContainer";
-import { Header } from "../components/Header/";
-import { Container } from "../components/Container/styled";
+import { HeaderMain } from "../components/Header/";
+// import { Container } from "../components/Container/styled";
+import { Container } from "@bootstrap-styled/v4";
 
 export const AppRouter = (): JSX.Element => (
 	<BrowserRouter>
-		<Header />
+		<HeaderMain />
 		<Container>
 			<Switch>
 				<Route path="/" component={ MainContainer } exact={ true } />

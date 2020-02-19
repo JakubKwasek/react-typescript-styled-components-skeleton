@@ -1,18 +1,24 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { ThemeProvider } from "styled-components";
+import { Grommet } from "grommet";
+import { grommet, dark } from "grommet/themes";
 import { Normalize } from "styled-normalize";
-import { MainTheme } from "./theme";
 import { AppRouter } from "./routes";
 import { GlobalStyle } from "./styled";
 
+const myTheme = {
+	"$btn-primary-bg": "blue",
+	"$btn-primary-color": "white",
+	"$hr-border-color": "red",
+};
+
 const init = (): void => {
 	ReactDOM.render(
-		<ThemeProvider theme={MainTheme}>
+		<Grommet theme={dark}>
 			<Normalize />
 			<GlobalStyle />
 			<AppRouter />
-		</ThemeProvider>,
+		</Grommet>,
 		document.getElementById("app")
 	);
 };

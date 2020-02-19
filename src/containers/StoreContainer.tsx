@@ -1,12 +1,7 @@
 import * as React from "react";
 import { books } from "../data/books";
-import {
-	BookSectionStyled,
-	BookImageStyled,
-	BookSectionItemStyled,
-	BookActionStyled
-} from "../components/BookSection/styled";
-import { ButtonPrimary } from "../components/Buttons/styled";
+import { Box, Button } from "grommet";
+// import { StoreContainerItem } from "./StoreContainerStyled";
 
 export const AddToCart = (id: number): void => {
 	console.log(id);
@@ -16,29 +11,28 @@ export const StoreContainer = (): JSX.Element => (
 	<>
 		{
 			books.map((book) => (
-				<BookSectionStyled key={book.id}>
-					<BookImageStyled>
+				<Box align="start" direction={"row"} pad="medium" key={book.id}>
+					<Box width={{ min: "20%", }} align={"start"} direction={"column"} gap="medium" >
 						<img src={book.image} />
-					</BookImageStyled>
-					<BookSectionItemStyled>
+					</Box>
+					<Box width={{ min: "20%", }} align={"start"} direction={"column"} gap="medium">
 						<small>Title:</small>
 						<p>{book.title}</p>
-					</BookSectionItemStyled>
-					<BookSectionItemStyled>
+					</Box>
+					<Box width={{ min: "20%", }} align={"start"} direction={"column"} gap="medium">
 						<small>Author:</small>
 						<p>{book.author}</p>
-					</BookSectionItemStyled>
-					<BookSectionItemStyled>
+					</Box>
+					<Box width={{ min: "20%", }} align={"start"} direction={"column"} gap="medium">
 						<small>Price:</small>
 						<p>{book.price}</p>
-					</BookSectionItemStyled>
-					<BookActionStyled>
-						<ButtonPrimary
-							onClick={(): void => AddToCart(book.id)}>
-								Add to Cart
-						</ButtonPrimary>
-					</BookActionStyled>
-				</BookSectionStyled>
+					</Box>
+					<Box width={{ min: "20%", }} align={"start"} direction={"column"} gap="medium">
+						<Button
+							primary
+							onClick={(): void => AddToCart(book.id)}>Add to Cart</Button>
+					</Box>
+				</Box>
 			))
 		}
 	</>
