@@ -5,23 +5,30 @@ import { StoreContainer } from "../containers/StoreContainer";
 import { CartContainer } from "../containers/CartContainer";
 import { NotFoundContainer } from "../containers/NotFoundContainer";
 import { HeaderMain } from "../components/Header/";
-import { Grid } from "grommet";
+import { Grid, Box } from "grommet";
 
 export const AppRouter = (): JSX.Element => (
 	<BrowserRouter>
-		<HeaderMain />
 		<Grid
-			fill
-			columns={["flex"]}
-			rows={["flex"]}
-			gap="small"
+			rows={["xxsmall", "100%"]}
+			columns={["10%", "80%", "10%"]}
+			gap="0"
+			areas={[
+				{ name: "header", start: [0, 0], end: [2, 0], },
+				{ name: "main", start: [1, 1], end: [1, 1], }
+			]}
 		>
-			<Switch>
-				<Route path="/" component={ MainContainer } exact={ true } />
-				<Route path="/store" component={ StoreContainer } />
-				<Route path="/cart" component={ CartContainer } exact={ true } />
-				<Route component={ NotFoundContainer } />
-			</Switch>
+			<Box gridArea="header" background="brand">
+				<HeaderMain/>
+			</Box>
+			<Box gridArea="main">
+				<Switch>
+					<Route path="/" component={ MainContainer } exact={ true } />
+					<Route path="/store" component={ StoreContainer } />
+					<Route path="/cart" component={ CartContainer } exact={ true } />
+					<Route component={ NotFoundContainer } />
+				</Switch>
+			</Box>
 		</Grid>
 	</BrowserRouter>
 );
