@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Button } from "grommet";
+import { Box, Button, Heading } from "grommet";
 import { booksCart } from "../data/booksCart";
 import { BoxFactory } from "../components/BoxFactory";
 
@@ -18,6 +18,13 @@ export const ChangeQuantity = (id: number, operation: QuantityOperation): void =
 
 export const CartContainer = (): JSX.Element => (
 	<>
+		<Box
+			justify="start"
+			align="center"
+			pad="xxsmall"
+			background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)">
+			<Heading color="white" level={4}>Your order</Heading>
+		</Box>
 		{
 			booksCart.map((book) => (
 				<Box

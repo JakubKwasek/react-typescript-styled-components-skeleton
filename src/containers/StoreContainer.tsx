@@ -1,6 +1,6 @@
 import * as React from "react";
 import { books } from "../data/books";
-import { Box, Button } from "grommet";
+import { Box, Button, Heading } from "grommet";
 import { BoxFactory } from "../components/BoxFactory";
 
 export const AddToCart = (id: number): void => {
@@ -9,6 +9,13 @@ export const AddToCart = (id: number): void => {
 
 export const StoreContainer = (): JSX.Element => (
 	<>
+		<Box
+			justify="center"
+			align="center"
+			pad="xxsmall"
+			background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)">
+			<Heading color="white" level={4}>Pick Items</Heading>
+		</Box>
 		{
 			books.map((book) => (
 				<Box

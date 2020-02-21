@@ -5,7 +5,7 @@ export const BoxFactory = (
 	props: BoxProps & {children: JSX.Element}
 ): JSX.Element => (
 	<Box
-		height={{ min: "160px", }}
+		height={{ min: "100px", }}
 		pad="small"
 		align={"start"}
 		direction={"column"}
