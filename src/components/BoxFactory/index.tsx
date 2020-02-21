@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Box, BoxProps } from "grommet";
+import { Box } from "grommet/es6/components/Box";
+import { BoxProps } from "grommet";
 
 export const BoxFactory = (
 	props: BoxProps & {children: JSX.Element}

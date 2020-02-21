@@ -4,6 +4,7 @@
   "main": "dist/bundle.js",
   "author": "Jakub Kwasek",
   "license": "MIT",
+  "sideEffects": false,
   "private": true,
   "scripts": {
     "build": "webpack",
@@ -14,9 +15,6 @@
     "test:update": "jest --updateSnapshot"
   },
   "dependencies": {
-    "@bootstrap-styled/provider": "2.0.2",
-    "@bootstrap-styled/v4": "^3.3.0",
-    "bootstrap-styled": "2.7.2",
     "grommet": "2.10.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
@@ -45,6 +43,7 @@
     "typescript": "3.7.5",
     "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "4.41.5",
+    "webpack-bundle-analyzer": "3.6.0",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.2"
   }

@@ -1,6 +1,7 @@
 const path = require("path");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
 	mode: "production",
@@ -46,5 +47,6 @@ module.exports = {
 			title: "react-typescript-styled-components-skeleton",
 			template: path.join(__dirname, "templates/index.ejs"),
 		})
+		// new BundleAnalyzerPlugin()
 	],
 };

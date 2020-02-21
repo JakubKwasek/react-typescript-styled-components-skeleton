@@ -1,6 +1,8 @@
 import * as React from "react";
 import { books } from "../data/books";
-import { Box, Button, Heading } from "grommet";
+import { Box } from "grommet/es6/components/Box";
+import { Button } from "grommet/es6/components/Button";
+import { Heading } from "grommet/es6/components/Heading";
 import { BoxFactory } from "../components/BoxFactory";
 
 export const AddToCart = (id: number): void => {

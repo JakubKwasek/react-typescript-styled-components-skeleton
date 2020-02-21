@@ -5,7 +5,9 @@ import { StoreContainer } from "../containers/StoreContainer";
 import { CartContainer } from "../containers/CartContainer";
 import { NotFoundContainer } from "../containers/NotFoundContainer";
 import { HeaderMain } from "../components/Header/";
-import { Grid, Box } from "grommet";
+import { Box } from "grommet/components/Box";
+import { Grid } from "grommet/components/Grid";
+
 
 export const AppRouter = (): JSX.Element => (
 	<BrowserRouter>

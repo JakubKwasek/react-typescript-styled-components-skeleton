@@ -1,5 +1,7 @@
 import * as React from "react";
-import { Box, Button, Heading } from "grommet";
+import { Box } from "grommet/es6/components/Box";
+import { Button } from "grommet/es6/components/Button";
+import { Heading } from "grommet/es6/components/Heading";
 import { booksCart } from "../data/booksCart";
 import { BoxFactory } from "../components/BoxFactory";
 

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "grommet";
+import { Box } from "grommet/es6/components/Box";
 
 export const NotFoundContainer = (): JSX.Element => (
 	<Box

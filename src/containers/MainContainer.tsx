@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Box, Heading } from "grommet";
+import { Box } from "grommet/es6/components/Box";
+import { Heading } from "grommet/es6/components/Heading";
 
 export const MainContainer = (): JSX.Element => (
 	<Box

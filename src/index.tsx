@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { Grommet } from "grommet";
-import { grommet } from "grommet/themes";
+import { Grommet } from "grommet/es6/components/Grommet";
+import { grommet } from "grommet/es6/themes";
 import { Normalize } from "styled-normalize";
 import { AppRouter } from "./routes";
 import { GlobalStyle } from "./styled";

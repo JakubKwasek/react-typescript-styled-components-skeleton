@@ -1,6 +1,7 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import { Box, Header } from "grommet";
+import { Box } from "grommet/es6/components/Box";
+import { Header } from "grommet/es6/components/Header";
 
 export const HeaderMain = (): JSX.Element => (
 	<Header background="light-4" pad="small">
