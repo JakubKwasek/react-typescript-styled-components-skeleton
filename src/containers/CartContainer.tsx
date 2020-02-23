@@ -32,41 +32,41 @@ export const CartContainer = (): JSX.Element => (
 				<Box
 					align="start"
 					direction={"row"}
-					border={{side: "bottom",}}
+					border={{side: "bottom"}}
 					pad="small"
 					key={book.id}>
 					<BoxFactory
-						width={{ min: "10%", }}>
+						width={{ min: "10%" }}>
 						<img src={book.image} />
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "30%", }}>
+						width={{ min: "30%" }}>
 						<>
 							<small>Title:</small>
 							<p>{book.title}</p>
 						</>
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "20%", }}>
+						width={{ min: "20%" }}>
 						<>
 							<small>Price:</small>
 							<p>{book.price}</p>
 						</>
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "20%", }}>
+						width={{ min: "20%" }}>
 						<>
 							<small>Quantity:</small>
 							<p>
 								<Button
-									margin={{ horizontal: "10px",}}
+									margin={{ horizontal: "10px"}}
 									label="-"
 									reverse
 									onClick={(): void =>
 										ChangeQuantity(book.id, QuantityOperation.remove)}/>
 								{book.quantity}
 								<Button
-									margin={{ horizontal: "10px",}}
+									margin={{ horizontal: "10px"}}
 									label="+"
 									reverse
 									onClick={(): void =>
@@ -75,7 +75,7 @@ export const CartContainer = (): JSX.Element => (
 						</>
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "20%", }}>
+						width={{ min: "20%" }}>
 						<>
 							<small>Action:</small>
 							<p>

@@ -23,35 +23,35 @@ export const StoreContainer = (): JSX.Element => (
 				<Box
 					align="start"
 					direction={"row"}
-					border={{side: "bottom",}}
+					border={{side: "bottom"}}
 					pad="small"
 					key={book.id}>
 					<BoxFactory
-						width={{ min: "10%", }}>
+						width={{ min: "10%" }}>
 						<img src={book.image} />
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "30%", }}>
+						width={{ min: "30%" }}>
 						<>
 							<small>Title:</small>
 							<p>{book.title}</p></>
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "20%", }}>
+						width={{ min: "20%" }}>
 						<>
 							<small>Author:</small>
 							<p>{book.author}</p>
 						</>
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "20%", }}>
+						width={{ min: "20%" }}>
 						<>
 							<small>Price:</small>
 							<p>{book.price}</p>
 						</>
 					</BoxFactory>
 					<BoxFactory
-						width={{ min: "20%", }}>
+						width={{ min: "20%" }}>
 						<Button
 							label="Add"
 							primary

@@ -1,6 +1,7 @@
 const path = require("path");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, "dist"),
 		filename: "[name].bundle.js",
+		chunkFilename: "[name].bundle.js",
 	},
 	module: {
 		rules: [
@@ -41,12 +43,15 @@ module.exports = {
 			automaticNameDelimiter: ".",
 			chunks: "all",
 		},
+		sideEffects: true,
+		nodeEnv: "production",
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: "react-typescript-styled-components-skeleton",
 			template: path.join(__dirname, "templates/index.ejs"),
-		})
+		}),
+		new CleanWebpackPlugin()
 		// new BundleAnalyzerPlugin()
 	],
 };

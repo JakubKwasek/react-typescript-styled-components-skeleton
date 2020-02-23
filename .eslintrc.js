@@ -24,7 +24,9 @@ module.exports = {
 		"comma-dangle": ["error",
 			{
 			"arrays": "never",
-			"objects": "always",
+			"objects": "always-multiline",
+			"imports": "never",
+      "exports": "never",
 			}
 		],
 		"jsx-quotes": ["error", "prefer-double"],

@@ -16,8 +16,8 @@ export const AppRouter = (): JSX.Element => (
 			columns={["10%", "80%", "10%"]}
 			gap="0"
 			areas={[
-				{ name: "header", start: [0, 0], end: [2, 0], },
-				{ name: "main", start: [1, 1], end: [1, 1], }
+				{ name: "header", start: [0, 0], end: [2, 0] },
+				{ name: "main", start: [1, 1], end: [1, 1] }
 			]}
 		>
 			<Box gridArea="header" background="brand">
