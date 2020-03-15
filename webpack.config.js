@@ -65,13 +65,14 @@ const path = require("path");
 module.exports = ({mode, presets} = {mode: "production", presets: []}) => {
 	return webpackMege (
 		{
-			mode,
-			resolve: {
-				extensions: [".ts", ".tsx", ".js"],
-			},
 			devServer: {
 				contentBase: path.join(__dirname, "dist"),
 				historyApiFallback: true,
+				watchContentBase: true
+			},
+			mode,
+			resolve: {
+				extensions: [".js"],
 			},
 			module: {
 				rules: [
