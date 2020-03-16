@@ -1,17 +1,16 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
+
 module.exports = () => ({
-	output: {
-		filename: "[name].bundle.js",
+	devServer: {
+		contentBase: path.join(__dirname, "../../", "dist"),
+		historyApiFallback: true,
+		watchContentBase: true
 	},
-	resolve: {
-		extensions: [".ts", ".tsx", ".js"],
-	},
-	module: {
-		rules: [
-			{
-				test: /\.ts(x?)$/,
-				exclude: /node_modules/,
-				use: [{loader: "ts-loader"}],
-			}
-		],
-	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: "react-typescript-styled-components-skeleton",
+			template: path.join(__dirname, "../../", "templates/index.ejs"),
+		}),
+	]
 });
